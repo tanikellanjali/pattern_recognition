@@ -28,3 +28,18 @@ Prepare the Dataset:
   Place the dataset (train.csv) in the project directory.
   Ensure it matches the expected structure.
   Run the Script: Execute the Python script provided below.
+## How It Works
+### Data Preprocessing:
+- Fills missing loan amounts with the median value.
+- Encodes categorical columns into numeric labels using LabelEncoder.
+-Scales numeric columns for consistent model input using StandardScaler.
+### Pattern Recognition:
+-Analyzes row-wise patterns in individual columns using subsequence identification.
+### Prediction:
+- Trains a Random Forest classifier using preprocessed features.
+- Predicts Loan_Status for unseen test data.
+### Evaluation:
+- Outputs:
+  Classification Report: Precision, recall, F1-score.
+  Confusion Matrix: True positives, false positives, etc.
+  Accuracy Score: Overall model accuracy.
